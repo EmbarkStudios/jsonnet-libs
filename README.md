@@ -19,9 +19,34 @@ The libraries published here are not necessarily Kubernetes related. They are ju
 
 You can find the documentation for the libraries by following [this link](https://EmbarkStudios.github.io/jsonnet-libs).
 
+## Usage
+
+You can use [Jsonnet Bundler](https://github.com/jsonnet-bundler/jsonnet-bundler) to install the libraries by running the following command:
+
+```bash
+jb install github.com/EmbarkStudios/jsonnet-libs/<library>@<version>
+```
+
+Once installed, you can import the library in your jsonnet code:
+
+```jsonnet
+local lib = import 'github.com/EmbarkStudios/jsonnet-libs/<library>/<lib-version>.libsonnet';
+```
+
+Here is an example of how you can use the `backstage` library:
+
+```jsonnet
+local backstage = (import "github.com/EmbarkStudios/jsonnet-libs/backstage/v1alpha1/main.libsonnet").backstage;
+local component = backstage.v1alpha1.component;
+
+component.new("Hello world", "Hello world service", "group:devs")
+```
+
+The above example will generate the service component in the `backstage` format.
+
 ## Libraries
 
-- [Backstage](https://backstage.io/)
+- [Backstage](https://embarkstudios.github.io/jsonnet-libs/backstage/v1alpha1/)
 
 ## Contributing
 
