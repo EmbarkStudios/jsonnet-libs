@@ -1,0 +1,15 @@
+{
+  local d = (import 'doc-util/main.libsonnet'),
+  '#':: d.pkg(name='backstage', url='', help=''),
+  api: (import 'api.libsonnet'),
+  component: (import 'component.libsonnet'),
+  domain: (import 'domain.libsonnet'),
+  entity: (import 'entity.libsonnet'),
+  entityEnvelope: (import 'entityEnvelope.libsonnet'),
+  entityMeta: (import 'entityMeta.libsonnet'),
+  group: (import 'group.libsonnet'),
+  location: (import 'location.libsonnet'),
+  resource: (import 'resource.libsonnet'),
+  system: (import 'system.libsonnet'),
+  user: (import 'user.libsonnet'),
+}

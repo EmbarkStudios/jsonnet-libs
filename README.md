@@ -6,36 +6,26 @@
 
 <div align="center">
 
-<!--- FIXME: Pick an emoji and name your project! --->
-# `🌻 opensource-template`
+# `🧾 jsonnet-libs`
 
-<!--- FIXME: Write short catchy description/tagline of project --->
-**Template for creating new open source repositories that follow the Embark open source guidelines**
+**Generated jsonnet libraries (libsonnet)**
 
 <!--- FIXME: Update crate, repo and CI workflow names here! Remove any that are not relevant --->
 
 [![Embark](https://img.shields.io/badge/embark-open%20source-blueviolet.svg)](https://embark.dev)
-[![Embark](https://img.shields.io/badge/discord-ark-%237289da.svg?logo=discord)](https://discord.gg/dAuKfZS)
-[![Crates.io](https://img.shields.io/crates/v/rust-gpu.svg)](https://crates.io/crates/rust-gpu)
 [![Docs](https://docs.rs/rust-gpu/badge.svg)](https://docs.rs/rust-gpu)
-[![Git Docs](https://img.shields.io/badge/git%20main%20docs-published-blue)](https://embarkstudios.github.io/presser/presser/index.html)
-[![dependency status](https://deps.rs/repo/github/EmbarkStudios/rust-gpu/status.svg)](https://deps.rs/repo/github/EmbarkStudios/rust-gpu)
-[![Build status](https://github.com/EmbarkStudios/physx-rs/workflows/CI/badge.svg)](https://github.com/EmbarkStudios/physx-rs/actions)
+<!-- [![Git Docs](https://img.shields.io/badge/git%20main%20docs-published-blue)](https://embarkstudios.github.io/presser/presser/index.html) -->
+[![Build status](https://github.com/EmbarkStudios/jsonnet-libs/workflows/CI/badge.svg)](https://github.com/EmbarkStudios/jsonnet-libs/actions)
 </div>
 
-## TEMPLATE INSTRUCTIONS
+This repository contains a collection of jsonnet libraries that are automatically generated using [`k8s-gen`](https://github.com/jsonnet-libs/k8s). The libraries are not being published to the [jsonnet-libs](https://github.com/jsonnet-libs/k8s-libsonnet) repository because they do not match the same use case as the libraries there.
+The libraries published here are not necessarily Kubernetes related. They are just libraries that are generated using the same tooling.
 
-1. Create a new repository under EmbarkStudios using this template.
-1. **Title:** Change the first line of this README to the name of your project, and replace the sunflower with an emoji that represents your project. 🚨 Your emoji selection is critical.
-1. **Badges:** In the badges section above, change the repo name in each URL. If you are creating something other than a Rust crate, remove the crates.io and docs badges (and feel free to add more appropriate ones for your language).
-1. **CI:** In `./github/workflows/` rename `rust-ci.yml` (or the appropriate config for your language) to `ci.yml`. And go over it and adapt it to work for your project
-    - If you aren't using or customized the CI workflow, also see the TODO in `.mergify.yml`
-    - If you want to use the automatic rustdoc publishing to github pages for git main, see `rustdoc-pages.yml`
-1. **Issue & PR Templates**: Review the files in `.github/ISSUE_TEMPLATE` and `.github/pull_request_template`. Adapt them
-to suit your needs, removing or re-wording any sections that don't make sense for your use case.
-1. **CHANGELOG.md:** Change the `$REPO_NAME` in the links at the bottom to the name of the repository, and replace the example template lines with the actual notes for the repository/crate.
-1. **release.toml:** in `./release.toml` change the `$REPO_NAME` to the name of the repository
-1. **Cleanup:** Remove this section of the README and any unused files (such as configs for other languages) from the repo.
+You can find the documentation for the libraries by following [this link](https://EmbarkStudios.github.io/jsonnet-libs).
+
+## Libraries
+
+- [Backstage](https://backstage.io/)
 
 ## Contributing
 
