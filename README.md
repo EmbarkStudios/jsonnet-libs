@@ -10,12 +10,8 @@
 
 **Generated jsonnet libraries (libsonnet)**
 
-<!--- FIXME: Update crate, repo and CI workflow names here! Remove any that are not relevant --->
-
 [![Embark](https://img.shields.io/badge/embark-open%20source-blueviolet.svg)](https://embark.dev)
-[![Docs](https://docs.rs/rust-gpu/badge.svg)](https://docs.rs/rust-gpu)
-<!-- [![Git Docs](https://img.shields.io/badge/git%20main%20docs-published-blue)](https://embarkstudios.github.io/presser/presser/index.html) -->
-[![Build status](https://github.com/EmbarkStudios/jsonnet-libs/workflows/CI/badge.svg)](https://github.com/EmbarkStudios/jsonnet-libs/actions)
+[![Docs](https://github.com/EmbarkStudios/jsonnet-libs/actions/workflows/mkdocs.yaml/badge.svg)](https://embarkstudios.github.io/jsonnet-libs/)
 </div>
 
 This repository contains a collection of jsonnet libraries that are automatically generated using [`k8s-gen`](https://github.com/jsonnet-libs/k8s). The libraries are not being published to the [jsonnet-libs](https://github.com/jsonnet-libs/k8s-libsonnet) repository because they do not match the same use case as the libraries there.
