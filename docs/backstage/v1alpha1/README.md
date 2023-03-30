@@ -5,7 +5,7 @@ permalink: /backstage/v1alpha1/
 # backstage
 
 ```jsonnet
-local backstage = import "github.com/EmbarkStudios/jsonnet-libs/backstage-libsonnet/v1alpha1/main.libsonnet"
+local backstage = import "github.com/EmbarkStudios/jsonnet-libs/backstage/v1alpha1/main.libsonnet"
 ```
 
 
